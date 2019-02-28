@@ -7,6 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>A APP ESTA FUNCIONANDO</h1>
+    <h1>Aqui estão as enquetes abertas para serem respondidas</h1>
+    <ul>
+        {% for perguntas in perguntas %}
+        <li class="main listitem"><a href="#">{{ perguntas }}</a></li>
+        {% endfor %}
+    </ul>
 </body>
 </html>
